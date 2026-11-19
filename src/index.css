@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'DM Sans', sans-serif; color: #182230; background: #f8fafc; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f8fafc; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.font-display { font-family: 'Playfair Display', serif; }
+.paper-grid { background-image: linear-gradient(rgba(178,40,48,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(178,40,48,.035) 1px, transparent 1px); background-size: 28px 28px; }
+.fade-up { animation: fade-up .55s ease both; }
+@keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse-red { 50% { box-shadow: 0 0 0 5px rgba(178,40,48,.16); } }
+.alert-pulse { animation: pulse-red 1.5s infinite; }
+.field { width: 100%; border: 1px solid #e2e8f0; border-radius: 8px; background: white; padding: 10px 12px; font-size: 13px; font-weight: 400; outline: none; }
+.field:focus { border-color: #b22830; box-shadow: 0 0 0 3px rgba(178,40,48,.1); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #d7c5b1; border-radius: 8px; }
